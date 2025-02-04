@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace TeamSolution
 {
@@ -14,9 +15,20 @@ namespace TeamSolution
         {
             Text = text;
         }
+        public void Logtext(string name, string text)
+        {
+            using (StreamWriter sw = new StreamWriter(text))
+            {
+                sw.WriteLine(name);
+            }
+        }
         public void Log(string text)
         {
-            File.AppendAllText(Text, text);
+            string name=Console.ReadLine();
+            using (StreamWriter sw = new StreamWriter(text))
+            {
+                sw.WriteLine(name);
+            }
         }
     }
 }

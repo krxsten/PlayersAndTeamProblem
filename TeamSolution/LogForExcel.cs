@@ -18,7 +18,7 @@ namespace TeamSolution
         {
             text.Add(excelText);
         }
-        public void SaveLog(string filePath)
+        public void LogNotImplemented(string filePath)
         {
             throw new NotImplementedException("Not Implemented");
         }

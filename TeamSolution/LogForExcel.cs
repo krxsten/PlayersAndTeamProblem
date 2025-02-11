@@ -46,7 +46,7 @@ namespace TeamSolution
         {
             using (XLWorkbook workbook = new XLWorkbook(filePath))
             {
-                var worksheet = workbook.Worksheets.Worksheet("Logger");
+                var worksheet = workbook.Worksheets.Worksheet("Worksheet");
 
                 foreach (var row in worksheet.RowsUsed())
                 {
@@ -64,7 +64,7 @@ namespace TeamSolution
         {
             using (XLWorkbook workbook = new XLWorkbook())
             {
-                var worksheet = workbook.AddWorksheet("Logger");
+                var worksheet = workbook.AddWorksheet("WorkSheet");
 
                 for (int i = 0; i < text.Count; i++)
                 {

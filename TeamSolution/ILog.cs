@@ -8,6 +8,6 @@ namespace TeamSolution
 {
     public interface ILog
     {
-        void Log(string text);
+        void Log(string text, IList<string> history);
     }
 }
